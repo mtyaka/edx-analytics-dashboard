@@ -26,6 +26,7 @@ ARG INSIGHTS_CODE_DIR="${INSIGHTS_APP_DIR}/edx_analytics_dashboard"
 ARG INSIGHTS_NODEENV_DIR="${COMMON_APP_DIR}/insights/nodeenvs/insights"
 
 ENV PATH "${INSIGHTS_VENV_DIR}/bin:${INSIGHTS_NODEENV_DIR}/bin:$PATH"
+ENV INSIGHTS_APP_DIR ${INSIGHTS_APP_DIR}
 ENV THEME_SCSS "sass/themes/open-edx.scss"
 
 # No need to activate insights virtualenv as it is already activated by putting in the path
