@@ -6,7 +6,6 @@ on:
       - master
     tags:
       - open-release/*
-  pull_request:
 jobs:
   push:
     runs-on: ubuntu-latest
